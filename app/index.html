@@ -68,8 +68,8 @@ const SHEET="1w0CBjyokDwZUwU3ZY-waAyLhtvz8RUxCNyyEi22D9Pk";
 const PRODUCTS=[{"id": "bearing_own", "cat": "bearings", "en": "AL BATAL Bearings 6204 and 6005", "ar": "رولمان البطل <bdi>6204</bdi> و <bdi>6005</bdi>", "img": "../6-img-bearing_own.jpg"}, {"id": "bearing_jtekt", "cat": "bearings", "en": "Ball Bearing 6204 2RS C3 (JTEKT / Koyo)", "ar": "رولمان <bdi>6204 2RS C3 (JTEKT / Koyo)</bdi>", "img": "../5-img-bearing_jtekt.jpg"}, {"id": "kit", "cat": "starter", "en": "Starter Repair Kit (armature with brush set)", "ar": "طقم صيانة مارش (أرميتشر مع طقم فحمات)", "img": "../14-img-kit.jpg"}, {"id": "bendix1", "cat": "starter", "en": "Starter Bendix Drives, boxed", "ar": "بندكس مارش مع العلبة", "img": "../7-img-bendix1.jpg"}, {"id": "bendix2", "cat": "starter", "en": "Starter Bendix Drive", "ar": "بندكس المارش", "img": "../8-img-bendix2.jpg"}, {"id": "bendix3", "cat": "starter", "en": "Starter Bendix Drive (side view)", "ar": "بندكس مارش (منظر جانبي)", "img": "../9-img-bendix3.jpg"}, {"id": "arm1", "cat": "starter", "en": "Starter Armature", "ar": "أرميتشر المارش", "img": "../3-img-arm1.jpg"}, {"id": "arm2", "cat": "starter", "en": "Starter Armature, copper commutator", "ar": "أرميتشر المارش بكوليكتور نحاس", "img": "../4-img-arm2.jpg"}, {"id": "brush", "cat": "starter", "en": "Brush Plate and End Cover", "ar": "غطاء المارش مع حامل الفحمات", "img": "../10-img-brush.jpg"}, {"id": "cover", "cat": "starter", "en": "Starter Front Cover", "ar": "الغطاء الأمامي للمارش", "img": "../11-img-cover.jpg"}, {"id": "coverside", "cat": "starter", "en": "Starter Cover (side view)", "ar": "غطاء المارش (منظر جانبي)", "img": "../12-img-coverside.jpg"}, {"id": "endcup", "cat": "starter", "en": "Starter End Cup", "ar": "الغطاء الخلفي للمارش", "img": "../13-img-endcup.jpg"}, {"id": "yoke", "cat": "starter", "en": "Starter Yoke (magnet housing) with Ring", "ar": "جسم المارش بالمغناطيس مع الحلقة", "img": "../21-img-yoke.jpg"}, {"id": "shell", "cat": "starter", "en": "Starter Yoke Shell", "ar": "جسم المارش الخارجي", "img": "../17-img-shell.jpg"}, {"id": "ten1", "cat": "tensioners", "en": "Bajaj Chain Tensioner DS101277", "ar": "شداد جنزير باجاج <bdi>DS101277</bdi>", "img": "../19-img-ten1.jpg"}, {"id": "ten2", "cat": "tensioners", "en": "Chain Tensioner, RE pack", "ar": "شداد جنزير، عبوة <bdi>RE</bdi>", "img": "../20-img-ten2.jpg"}, {"id": "spring", "cat": "tensioners", "en": "Spring and Seal Set", "ar": "طقم سوستة وجلدة", "img": "../18-img-spring.jpg"}, {"id": "plug5", "cat": "plugs", "en": "Spark Plugs, 5 Types (A7TC to F7TC)", "ar": "بوجيهات، 5 أنواع (<bdi>A7TC</bdi> إلى <bdi>F7TC</bdi>)", "img": "../16-img-plug5.jpg"}, {"id": "plug3", "cat": "plugs", "en": "Spark Plugs A7TC, CR8E, D8TC", "ar": "بوجيهات <bdi>A7TC</bdi> و <bdi>CR8E</bdi> و <bdi>D8TC</bdi>", "img": "../15-img-plug3.jpg"}];
 const CATS=[{"id": "bearings", "en": "Bearings, our own brand", "ar": "رولمانات، ماركة البطل"}, {"id": "starter", "en": "Starter parts", "ar": "قطع المارش"}, {"id": "tensioners", "en": "Tensioners and fittings", "ar": "شدادات وملحقات"}, {"id": "plugs", "en": "Spark plugs", "ar": "بوجيهات"}];
 const WA="201097811176";
-const T={ar:{ttl:"البطل | قائمة الأسعار",q:"دوّر على قطعة...",all:"الكل",egp:"جنيه",ask:"اسأل عن السعر",out:"غير متوفر",wa:"اطلب على الواتساب",items:"قطعة",total:"الإجمالي",none:"مفيش نتائج",upd:"آخر تحديث للأسعار",off:"الأسعار من آخر تحديث محفوظ",hello:"أهلاً، عايز أطلب من البطل:",tot:"الإجمالي",unp:"السعر بالاتفاق",pcs:"قطعة"},
-en:{ttl:"Al-Batal | Price list",q:"Search a part...",all:"All",egp:"EGP",ask:"Ask for price",out:"Out of stock",wa:"Order on WhatsApp",items:"items",total:"Total",none:"No results",upd:"Prices updated",off:"Showing last saved prices",hello:"Hello, I would like to order from Al-Batal:",tot:"Total",unp:"price on request",pcs:"pcs"}};
+const T={ar:{ttl:"البطل | قائمة الأسعار",q:"دوّر على قطعة...",all:"الكل",egp:"جنيه",ask:"اسأل عن السعر",out:"غير متوفر",wa:"اطلب على الواتساب",items:"قطعة",total:"الإجمالي",none:"مفيش نتائج",upd:"آخر تحديث للأسعار",off:"الأسعار من آخر تحديث محفوظ",hello:"أهلاً، عايز أطلب من البطل:",part:"إجمالي جزئي (فيه أصناف بدون سعر)",outn:"غير متوفر ومش هيتبعت",conf:"محتاج تأكيد السعر والتوافر",nof:"تعذر تحميل الأسعار الحالية. هتتأكد الأسعار على الواتساب",excl:"أصناف غير متوفرة اتشالت من الطلب",nop:"السعر يتأكد",tot:"الإجمالي",unp:"السعر بالاتفاق",pcs:"قطعة"},
+en:{ttl:"Al-Batal | Price list",q:"Search a part...",all:"All",egp:"EGP",ask:"Ask for price",out:"Out of stock",wa:"Order on WhatsApp",items:"items",total:"Total",none:"No results",upd:"Prices updated",off:"Showing last saved prices",hello:"Hello, I would like to order from Al-Batal:",part:"Partial subtotal (some items have no price)",outn:"out of stock, not sent",conf:"Please confirm price and availability",nof:"Could not load current prices. Prices will be confirmed on WhatsApp",excl:"Out-of-stock items were removed from the order",nop:"price to be confirmed",tot:"Total",unp:"price on request",pcs:"pcs"}};
 let lang=localStorage.getItem('lang')||'ar';
 let cat='all',qs='',prices={},stamp=null,offline=false;
 let cart=JSON.parse(localStorage.getItem('cart')||'{}');
@@ -85,8 +85,8 @@ function parse(text){const m={};csv(text).slice(1).forEach(r=>{const id=(r[0]||'
 async function load(){
  try{const r=await fetch(`https://docs.google.com/spreadsheets/d/${SHEET}/gviz/tq?tqx=out:csv&sheet=Prices&_=${Date.now()}`,{cache:'no-store'});
   if(!r.ok)throw 0;const t=await r.text();prices=parse(t);stamp=new Date();offline=false;
-  localStorage.setItem('prices',JSON.stringify({p:prices,t:stamp.toISOString()}))}
- catch(e){const s=JSON.parse(localStorage.getItem('prices')||'null');if(s){prices=s.p;stamp=new Date(s.t)}offline=true}
+  }
+ catch(e){prices={};stamp=null;offline=true}
  draw()}
 const fmt=n=>n.toLocaleString(lang=='ar'?'ar-EG':'en-US',{maximumFractionDigits:2});
 function save(){localStorage.setItem('cart',JSON.stringify(cart))}
@@ -95,7 +95,7 @@ function draw(keep){
  const t=T[lang];document.documentElement.lang=lang;document.documentElement.dir=lang=='ar'?'rtl':'ltr';
  $('ttl').textContent=t.ttl;$('q').placeholder=t.q;$('lg').textContent=lang=='ar'?'English':'عربي';$('wa').textContent=t.wa;document.title=t.ttl;
  $('chips').innerHTML=[{id:'all',[lang]:t.all},...CATS].map(c=>`<button class="chip ${cat==c.id?'on':''}" data-c="${c.id}">${c[lang]}</button>`).join('');
- $('st').textContent=stamp?((offline?t.off:t.upd)+': '+stamp.toLocaleString(lang=='ar'?'ar-EG':'en-GB',{dateStyle:'medium',timeStyle:'short'})):'';
+ $('st').textContent=offline?t.nof:stamp?(t.upd+': '+stamp.toLocaleString(lang=='ar'?'ar-EG':'en-GB',{dateStyle:'medium',timeStyle:'short'})):'';
  const ql=qs.trim().toLowerCase();
  const L=PRODUCTS.filter(p=>(cat=='all'||p.cat==cat)&&(!ql||(p.en+' '+p.ar.replace(/<[^>]+>/g,'')).toLowerCase().includes(ql)));
  $('list').innerHTML=L.length?L.map(p=>{const x=prices[p.id]||{};const has=x.price!=null;const n=cart[p.id]||0;
@@ -103,20 +103,24 @@ function draw(keep){
   ${x.out?`<div class="out">${t.out}</div>`:''}
   <div class="pr ${has?'':'na'}">${has?fmt(x.price)+' '+t.egp:t.ask}</div>
   <div class="q"><button data-d="1" data-i="${p.id}" ${x.out?'disabled':''}>+</button><span>${n}</span><button data-d="-1" data-i="${p.id}" ${n?'':'disabled'}>&minus;</button></div></div></div>`}).join(''):`<div class="none">${t.none}</div>`;
- let cnt=0,tot=0,unp=false;for(const id in cart){cnt+=cart[id];const x=prices[id];if(x&&x.price!=null)tot+=x.price*cart[id];else unp=true}
- $('sum').textContent=cnt?`${cnt} ${t.items}`+(tot?` · ${t.total}: ${fmt(tot)} ${t.egp}`:''):'';
+ let cnt=0,tot=0,unp=false,outc=0;for(const id in cart){const x=prices[id]||{};if(x.out){outc+=cart[id];continue}cnt+=cart[id];if(x.price!=null)tot+=x.price*cart[id];else unp=true}
+ $('sum').innerHTML=(cnt?`${cnt} ${t.items}`+(tot?` · ${unp?t.part:t.total}: ${fmt(tot)} ${t.egp}`:''):'')+(outc?`<div style="color:#b3261e;font-size:12px">${outc} ${t.outn}</div>`:'');
  $('wa').disabled=!cnt}
 $('chips').onclick=e=>{const c=e.target.closest('[data-c]');if(c){cat=c.dataset.c;draw()}};
 $('list').onclick=e=>{const b=e.target.closest('[data-i]');if(b)chg(b.dataset.i,+b.dataset.d)};
 $('q').oninput=e=>{qs=e.target.value;const f=document.activeElement;draw();};
 $('lg').onclick=()=>{lang=lang=='ar'?'en':'ar';localStorage.setItem('lang',lang);draw()};
 $('rf').onclick=load;
-$('wa').onclick=()=>{const t=T[lang];let tot=0,unp=false;const lines=Object.keys(cart).map(id=>{const p=PRODUCTS.find(x=>x.id==id),x=prices[id]||{},n=cart[id];
- if(x.price!=null){tot+=x.price*n;return `- ${nm(p)} x${n} = ${fmt(x.price*n)} ${t.egp}`}unp=true;return `- ${nm(p)} x${n} (${t.unp})`});
- const msg=t.hello+'\n'+lines.join('\n')+(tot?`\n${t.tot}: ${fmt(tot)} ${t.egp}`+(unp?' +':''):'');
- location.href='https://wa.me/'+WA+'?text='+encodeURIComponent(msg)};
+$('wa').onclick=async()=>{const t=T[lang];$('wa').disabled=true;await load();const L=[];let tot=0,unp=false,ex=0;
+ for(const id of Object.keys(cart)){const p=PRODUCTS.find(x=>x.id==id),x=prices[id]||{},n=cart[id];
+  if(x.out){ex+=n;continue}
+  const plain=nm(p).replace(/<[^>]+>/g,'');
+  if(!offline&&x.price!=null){tot+=x.price*n;L.push(`- ${plain} x${n} = ${fmt(x.price*n)} ${t.egp}`)}else{unp=true;L.push(`- ${plain} x${n} (${t.nop})`)}}
+ if(ex)alert(t.excl);
+ if(!L.length){draw();return}
+ const msg=t.hello+'\n'+L.join('\n')+(tot?`\n${unp?t.part:t.tot}: ${fmt(tot)} ${t.egp}`:'')+`\n${t.conf}`;
+ draw();location.href='https://wa.me/'+WA+'?text='+encodeURIComponent(msg)};
 if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});
-const sv=JSON.parse(localStorage.getItem('prices')||'null');if(sv){prices=sv.p;stamp=new Date(sv.t);offline=true}
 let open_=null;
 function detail(id){open_=id;const p=PRODUCTS.find(x=>x.id==id),x=prices[id]||{},t=T[lang];
  $('si').src=p.img;$('sn').innerHTML=nm(p);
